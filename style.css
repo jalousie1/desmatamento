@@ -1,0 +1,49 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f5f0;
+}
+
+.header {
+    background-color: #009966;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para cada página */
+#problems-link.active, #about-link.active, #report-link.active {
+    font-weight: bold;
+}
+
+/* Estilos de links */
+a {
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #000000;
+}
