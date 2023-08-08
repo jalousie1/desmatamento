@@ -1,6 +1,7 @@
-/* Estilos gerais */
+@charset "UTF-8";
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0f5f0;
