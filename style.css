@@ -36,7 +36,7 @@ nav a {
 }
 
 /* Estilos específicos para cada página */
-#problems-link.active, #about-link.active, #report-link.active {
+#problemas-link.active, #sobre-link.active, #reportar-link.active {
     font-weight: bold;
 }
 
