@@ -26,6 +26,13 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
+    background-color: #009966; /* Cor de fundo original */
+    transition: background-color 0.5s ease-in-out; /* Adiciona uma transição suave */
+}
+
+nav a:hover {
+    color: #90eca4;
+    animation: fadeInBackground 0.5s ease-in-out;
 }
 
 .content {
