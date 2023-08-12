@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desmatamento</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Adicione estilos personalizados aqui, se necessário */
+    </style>
 </head>
 <body>
     <div class="header">
@@ -15,17 +18,42 @@
         <nav>
             <a href="index.html">Início</a>
             <a href="consequencias.html">Consequências</a>
-            <a href="sobre.html">Sobre Nós</a>
-            <a href="reportar.html">Denuncie</a>
+            <a href="ajudar.html">Ajudar</a>
+            <a href="denunciar.html">Denuncie</a>
+            <span id="username"></span>
+            <a href="login.html" id="login-link">Log-in</a>
         </nav>
     </div>
     <div class="content">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <img src="imagens/imagem1.jpg" alt="Imagem 1" width="500" height="300">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagens/imagem2.jpg" alt="Imagem 2" width="500" height="300">
+            </div>
+            <div class="carousel-slide">
+                <img src="imagens/imagem3.jpg" alt="Imagem 3" width="500" height="300">
+            </div>
+             <div class="carousel-slide">
+                <img src="imagens/imagem4.jpg" alt="Imagem 4" width="500" height="300">
+            </div>
+            <div class="prev-button">&#10094;</div>
+            <div class="next-button">&#10095;</div>
+        </div>
         <h2></h2>
         <p>O desmatamento no Brasil cresceu 22,3% em 2022, totalizando mais de dois milhões de hectares destruídos. Isso é equivalente a 90% da área do estado de Sergipe. Só na Amazônia, cerca de 21 árvores foram derrubadas a cada segundo. O dia com maior área desmatada em 2022 foi 25 de julho, com 6.945 hectares desmatados, equivalente a 8.400 campos de futebol. O desmatamento é um problema sério para o Brasil, pois afeta o meio ambiente, a economia e a sociedade.</p>
-        
-    
-     <img src="imagens/imagem1.jpg"                      width="500x600px">
-	<a href="https://g1.globo.com/meio-ambiente/noticia/2023/06/12/desmatamento-nos-biomas-brasileiros-cresce-22percent-em-2022-aponta-levantamento-do-mapbiomas.ghtml">Ver matéria completa... </a></p>
+        <a href="https://g1.globo.com/meio-ambiente/noticia/2023/06/12/desmatamento-nos-biomas-brasileiros-cresce-22percent-em-2022-aponta-levantamento-do-mapbiomas.ghtml">Ver matéria completa... </a>
+    </div>
+    <div class="footer">
+        <a href="index.html">Início</a>
+        <a href="consequencias.html">Consequências</a>
+        <a href="ajudar.html">Ajudar</a>
+        <a href="denunciar.html">Denuncie</a>
+        <p class="text-center text-muted">&copy; 2023 ACF, Inc</p>
+    </div>
     <script src="js/script.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/imagens.js"></script>
 </body>
 </html>
