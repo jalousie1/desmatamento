@@ -1,4 +1,2 @@
 # projeto-desmatamento
-Ínicio do projeto
-
-Simples site que aborda o desmatamento e seus impactos.
+Simples website que aborda os problemas ambientais.
