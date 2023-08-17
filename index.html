@@ -2,58 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desmatamento</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Problemas</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
     <style>
-        /* Adicione estilos personalizados aqui, se necessário */
-    </style>
+      .custom-navbar {
+          background-color: #69966b; /* Altere a cor de fundo aqui */
+      }
+
+      .custom-section {
+          background-color: #F7F7F7; /* Altere a cor de fundo aqui */
+          padding: 40px;
+      }
+  </style>
 </head>
 <body>
-    <div class="header">
-        <h1>Problemas do desmatamento</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="consequencias.html">Consequências</a>
-            <a href="ajudar.html">Ajudar</a>
-            <a href="denunciar.html">Denuncie</a>
-            <span id="username"></span>
-            <a href="login.html" id="login-link">Log-in</a>
-        </nav>
+  <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Problemas ambientais</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="consequencias.html">Consequências</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ajudar.html">Ajudar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="denuncie.html">Denuncie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Login</a>
+        </li>
+      </ul>
     </div>
-    <div class="content">
-        <div class="carousel-container">
-            <div class="carousel-slide active">
-                <img src="imagens/imagem1.jpg" alt="Imagem 1" width="500" height="300">
-            </div>
-            <div class="carousel-slide">
-                <img src="imagens/imagem2.jpg" alt="Imagem 2" width="500" height="300">
-            </div>
-            <div class="carousel-slide">
-                <img src="imagens/imagem3.jpg" alt="Imagem 3" width="500" height="300">
-            </div>
-             <div class="carousel-slide">
-                <img src="imagens/imagem4.jpg" alt="Imagem 4" width="500" height="300">
-            </div>
-            <div class="prev-button">&#10094;</div>
-            <div class="next-button">&#10095;</div>
+  </div>
+</nav>
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imagens/imagem1.jpg" class="d-block w-100" alt="imagem1" width="500" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/imagem2.jpg" class="d-block w-100" alt="imagem2" width="500" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/imagem3.jpg" class="d-block w-100" alt="imagem3" width="500" height="600">
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/imagem4.jpg" class="d-block w-100" alt="imagem4" width="500" height="600">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="container custom-section">
+    <div class="row">
+        <div class="col-md-6">
+            <img src="imagens/imagem2.jpg" alt="Nova Imagem" class="img-fluid">
         </div>
-        <h2></h2>
-        <p>O desmatamento no Brasil cresceu 22,3% em 2022, totalizando mais de dois milhões de hectares destruídos. Isso é equivalente a 90% da área do estado de Sergipe. Só na Amazônia, cerca de 21 árvores foram derrubadas a cada segundo. O dia com maior área desmatada em 2022 foi 25 de julho, com 6.945 hectares desmatados, equivalente a 8.400 campos de futebol. O desmatamento é um problema sério para o Brasil, pois afeta o meio ambiente, a economia e a sociedade.</p>
-        <a href="https://g1.globo.com/meio-ambiente/noticia/2023/06/12/desmatamento-nos-biomas-brasileiros-cresce-22percent-em-2022-aponta-levantamento-do-mapbiomas.ghtml">Ver matéria completa... </a>
+        <div class="col-md-6">
+            <p>O desmatamento no Brasil cresceu 22,3% em 2022, totalizando mais de dois milhões de hectares destruídos. Isso é equivalente a 90% da área do estado de Sergipe. Só na Amazônia, cerca de 21 árvores foram derrubadas a cada segundo. O dia com maior área desmatada em 2022 foi 25 de julho, com 6.945 hectares desmatados, equivalente a 8.400 campos de futebol. O desmatamento é um problema sério para o Brasil, pois afeta o meio ambiente, a economia e a sociedade.</p>
+        </div>
     </div>
-    <div class="footer">
-        <a href="index.html">Início</a>
-        <a href="consequencias.html">Consequências</a>
-        <a href="ajudar.html">Ajudar</a>
-        <a href="denunciar.html">Denuncie</a>
-        <p class="text-center text-muted">&copy; 2023 ACF, Inc</p>
-    </div>
-    <script src="js/script.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/imagens.js"></script>
+</div>
+
+<footer class="footer footer-dark">
+  <div class="container">
+    <p class="text-center">Copyright &copy; 2023 ACF. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

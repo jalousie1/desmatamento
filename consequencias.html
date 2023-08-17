@@ -2,44 +2,242 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Problemas Ambientais</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+    <style>
+      .custom-navbar {
+          background-color: #69966b; /* Cor de fundo navbar */
+      }
+
+      .custom-section {
+          background-color: #F7F7F7;
+          padding: 40px;
+      }
+
+      .custom-card {
+          height: 100%;
+      }
+
+      .custom-card img {
+          height: 200px; /* Ajuste a altura desejada para as imagens */
+          object-fit: cover;
+      }
+      
+      .modal-body {
+          margin-bottom: 20px; /* Adiciona uma distância entre os modais */
+      }
+
+      .custom-card {
+      height: 100%;
+      background-color: #f3f3f3; /* Cor de fundo personalizada */
+      margin-bottom: 20px; /* Espaçamento entre os cards */
+    }
+
+    .custom-card .card-title {
+      color: black; /* Cor do título */
+  }
+
+  .custom-card .card-text {
+      color: black; /* Cor do texto (preto) */
+  }
+
+  .custom-card .btn-primary {
+      background-color: #69966b; /* Cor do botão */
+      border: none; /* Remover a borda do botão */
+  }
+
+  .custom-card .btn-primary:hover {
+      background-color: #618163; /* Cor do botão ao passar o mouse */
+  }
+  </style>
 </head>
-<body id="problemas">
-    <div class="header">
-        <h1>Problemas do desmatamento</h1>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="consequencias.html">Consequências</a>
-            <a href="ajudar.html">Ajudar</a>
-            <a href="denunciar.html">Denuncie</a>
-            <span id="username"></span>
-    		<a href="login.html" id="login-link">Log-in</a>
-        </nav>
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg custom-navbar navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Problemas ambientais</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="consequencias.html">Consequências</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="ajudar.html">Ajudar</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="denuncie.html">Denuncie</a>
+        </li>
+      </ul>
     </div>
-    <div class="content">
-        <h2>Principais Problemas Ambientais</h2>
-        <ul>
-            <li>Desmatamento descontrolado</li>
-            <li>Poluição do ar e da água</li>
-            <li>Mudanças climáticas</li>
-            <li>Degradação do solo</li>
-            <li>Geração de resíduos</li>
-            <li>Extinção de expecies</li>
-        </ul>
-        
-    <div class="footer">
-        <a href="index.html">Início</a>
-        <a href="consequencias.html">Consequências</a>
-        <a href="ajudar.html">Ajudar</a>
-        <a href="denunciar.html">Denuncie</a>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card mb-4 custom-card">
+        <img src="imagens/queimadas1.png" class="card-img-top" alt="imagem 1">
+        <div class="card-body">
+          <h5 class="card-title">Queimadas</h5>
+          <p class="card-text">Queimadas são prejudiciais.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">Leia mais sobre...</a>
+        </div>
+      </div>
     </div>
+    <div class="col-md-4">
+      <div class="card mb-4 custom-card">
+        <img src="imagens/poluicao.jpg" class="card-img-top" alt="imagem 2">
+        <div class="card-body">
+          <h5 class="card-title">Poluição do Ar</h5>
+          <p class="card-text">A poluição do ar afeta a saúde.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Leia mais sobre...</a>
+        </div>
+      </div>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/login.js"></script>
+    <div class="col-md-4">
+      <div class="card mb-4 custom-card">
+        <img src="imagens/desmatamentocard.jpg" class="card-img-top" alt="imagem 3">
+        <div class="card-body">
+          <h5 class="card-title">Desmatamento</h5>
+          <p class="card-text">O desmatamento prejudica a biodiversidade.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">Leia mais sobre...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card mb-4 custom-card">
+        <img src="imagens/poluicao-agua1.jpg" class="card-img-top" alt="imagem 4">
+        <div class="card-body">
+          <h5 class="card-title">Poluição da Água</h5>
+          <p class="card-text">A poluição da água ameaça ecossistemas aquáticos.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4">Leia mais sobre...</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card mb-4 custom-card">
+        <img src="imagens/mudancasclim2.jpg" class="card-img-top" alt="imagem 5">
+        <div class="card-body">
+          <h5 class="card-title">Mudanças Climáticas</h5>
+          <p class="card-text">As mudanças climáticas têm impactos globais.</p>
+          <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal5">Leia mais sobre...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="myModalLabel1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel1">Mais informações sobre queimadas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/queimadas.jpg" width="300px" alt="Queimadas" class="rounded">
+        <p>As queimadas são um problema ambiental grave que causam muitos danos à natureza. Elas destroem a floresta, liberam gases poluentes na atmosfera e contribuem para o aquecimento global.</p>
+        <p>Existem várias causas de queimadas, mas as principais são a ação humana e os raios. A ação humana pode ser intencional, como no caso de desmatamento, ou não intencional, como no caso de queima de lixo.</p>
+        <p>As queimadas podem ser controladas, mas é preciso tomar medidas para evitar que elas aconteçam. Uma das principais medidas é a educação ambiental, que deve ser feita desde a escola.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2 -->
+<div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="myModalLabel2" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel2">Mais informações sobre a poluição do ar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/poluicaoar2.jpg" width="300px" alt="Poluição do Ar" class="rounded">
+        <p>A poluição do ar é um problema ambiental que ocorre quando substâncias nocivas são liberadas na atmosfera, comprometendo a qualidade do ar que respiramos. Isso pode levar a problemas respiratórios, cardiovasculares e outros impactos na saúde humana.</p>
+        <p>As principais fontes de poluição do ar incluem emissões de veículos, indústrias e queima de combustíveis fósseis. É importante adotar medidas para reduzir essas emissões e melhorar a qualidade do ar nas cidades e regiões afetadas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3 -->
+<div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="myModalLabel3" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel3">Mais informações sobre o desmatamento</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/desmatamentocard2.jpg" width="300px" alt="Desmatamento" class="rounded">
+        <p>O desmatamento é a remoção de árvores e vegetação de áreas florestais, geralmente para dar espaço à agricultura, pecuária e outras atividades humanas. Isso resulta na perda de habitats naturais, diminuição da biodiversidade e contribuição para as mudanças climáticas.</p>
+        <p>O desmatamento também pode causar erosão do solo, degradação do ecossistema e impactos negativos na qualidade do ar e da água. A conservação das florestas é essencial para a saúde do planeta e das espécies que dependem delas.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 4 -->
+<div class="modal fade" id="myModal4" tabindex="-1" aria-labelledby="myModalLabel4" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel4">Mais informações sobre a poluição da água</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/poluicaoagua2.jpg" width="300px" alt="Poluição da Água" class="rounded">
+        <p>A poluição da água ocorre quando resíduos e poluentes são despejados em rios, lagos, oceanos e outras fontes de água. Isso compromete a qualidade da água e afeta os ecossistemas aquáticos e a vida marinha.</p>
+        <p>As principais fontes de poluição da água incluem esgoto não tratado, produtos químicos industriais e resíduos agrícolas. A poluição da água pode causar morte de animais aquáticos, contaminação da cadeia alimentar e impactos na saúde humana.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 5 -->
+<div class="modal fade" id="myModal5" tabindex="-1" aria-labelledby="myModalLabel5" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="myModalLabel5">Mais informações sobre as mudanças climáticas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="imagens/mudancasclim.jpg" width="300px" alt="Mudanças Climáticas" class="rounded">
+        <p>As mudanças climáticas são um fenômeno global causado pelo aumento das concentrações de gases de efeito estufa na atmosfera. Isso leva ao aquecimento do planeta, com consequências como o derretimento das calotas polares, o aumento do nível do mar e padrões climáticos imprevisíveis.</p>
+        <p>As atividades humanas, como a queima de combustíveis fósseis, contribuem significativamente para o aumento desses gases na atmosfera. Para combater as mudanças climáticas, é essencial reduzir as emissões de gases de efeito estufa e adotar práticas sustentáveis.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
