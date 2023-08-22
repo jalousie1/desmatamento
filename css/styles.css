@@ -1,0 +1,66 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fafafa;
+}
+
+.custom-navbar {
+    background-color: #69966b; /* Cor de fundo navbar */
+}
+
+.custom-section {
+    background-color: #F7F7F7;
+    padding: 40px;
+}
+
+.custom-card {
+    height: 100%;
+}
+
+.custom-card img {
+    height: 200px; /* Ajuste a altura desejada para as imagens */
+    object-fit: cover;
+}
+
+.modal-body {
+    margin-bottom: 20px; /* Adiciona uma distância entre os modais */
+}
+
+.custom-card {
+    height: 100%;
+    background-color: #f3f3f3;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.custom-card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; /* Rounded corners for images */
+  }
+
+.custom-card .card-title {
+color: black; /* Cor do título */
+}
+
+.custom-card .card-text {
+color: black; /* Cor do texto (preto) */
+}
+
+.custom-card .btn-primary {
+background-color: #69966b; /* Cor do botão */
+border: none; /* Remover a borda do botão */
+}
+
+.custom-card .btn-primary:hover {
+background-color: #618163; /* Cor do botão ao passar o mouse */
+}
+
+.modal-body {
+    margin-bottom: 20px;
+}
+
+.mt-4 {
+    margin-top: 40px; /* Ajuste conforme necessário */
+}

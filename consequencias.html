@@ -4,54 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
-    <style>
-      .custom-navbar {
-          background-color: #69966b; /* Cor de fundo navbar */
-      }
-
-      .custom-section {
-          background-color: #F7F7F7;
-          padding: 40px;
-      }
-
-      .custom-card {
-          height: 100%;
-      }
-
-      .custom-card img {
-          height: 200px; /* Ajuste a altura desejada para as imagens */
-          object-fit: cover;
-      }
-      
-      .modal-body {
-          margin-bottom: 20px; /* Adiciona uma distância entre os modais */
-      }
-
-      .custom-card {
-      height: 100%;
-      background-color: #f3f3f3; /* Cor de fundo personalizada */
-      margin-bottom: 20px; /* Espaçamento entre os cards */
-    }
-
-    .custom-card .card-title {
-      color: black; /* Cor do título */
-  }
-
-  .custom-card .card-text {
-      color: black; /* Cor do texto (preto) */
-  }
-
-  .custom-card .btn-primary {
-      background-color: #69966b; /* Cor do botão */
-      border: none; /* Remover a borda do botão */
-  }
-
-  .custom-card .btn-primary:hover {
-      background-color: #618163; /* Cor do botão ao passar o mouse */
-  }
-  </style>
+    <link rel="shortcut icon" href="imagens/folhaverde.ico" type="image/x-icon">
+    <title>Consequências</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <!-- nav -->
@@ -82,12 +41,13 @@
 
 <div class="container mt-5">
   <div class="row justify-content-center">
+    <!-- Cards da parte superior -->
     <div class="col-md-4">
       <div class="card mb-4 custom-card">
         <img src="imagens/queimadas1.png" class="card-img-top" alt="imagem 1">
         <div class="card-body">
           <h5 class="card-title">Queimadas</h5>
-          <p class="card-text">Queimadas são prejudiciais.</p>
+          <p class="card-text">Queimadas são incêndios descontrolados que causam danos ambientais significativos ao destruir a vegetação e liberar gases poluentes na atmosfera.</p>
           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal1">Leia mais sobre...</a>
         </div>
       </div>
@@ -97,7 +57,7 @@
         <img src="imagens/poluicao.jpg" class="card-img-top" alt="imagem 2">
         <div class="card-body">
           <h5 class="card-title">Poluição do Ar</h5>
-          <p class="card-text">A poluição do ar afeta a saúde.</p>
+          <p class="card-text">A poluição do ar é a presença de substâncias nocivas na atmosfera, resultando em problemas de saúde e impactos ambientais devido à inalação de partículas e gases tóxicos.</p>
           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2">Leia mais sobre...</a>
         </div>
       </div>
@@ -107,19 +67,20 @@
         <img src="imagens/desmatamentocard.jpg" class="card-img-top" alt="imagem 3">
         <div class="card-body">
           <h5 class="card-title">Desmatamento</h5>
-          <p class="card-text">O desmatamento prejudica a biodiversidade.</p>
+          <p class="card-text">Desmatamento é a remoção massiva de árvores e vegetação, resultando na perda de habitats naturais, redução da biodiversidade e contribuição para as mudanças climáticas.</p>
           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal3">Leia mais sobre...</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="row justify-content-center">
+  <div class="row justify-content-center mt-4">
+    <!-- Cards da parte inferior -->
     <div class="col-md-4">
       <div class="card mb-4 custom-card">
         <img src="imagens/poluicao-agua1.jpg" class="card-img-top" alt="imagem 4">
         <div class="card-body">
           <h5 class="card-title">Poluição da Água</h5>
-          <p class="card-text">A poluição da água ameaça ecossistemas aquáticos.</p>
+          <p class="card-text">Poluição da água ocorre quando substâncias poluentes são lançadas em corpos d'água, ameaçando ecossistemas aquáticos e prejudicando a saúde humana e a vida marinha.</p>
           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal4">Leia mais sobre...</a>
         </div>
       </div>
@@ -129,11 +90,12 @@
         <img src="imagens/mudancasclim2.jpg" class="card-img-top" alt="imagem 5">
         <div class="card-body">
           <h5 class="card-title">Mudanças Climáticas</h5>
-          <p class="card-text">As mudanças climáticas têm impactos globais.</p>
+          <p class="card-text">Mudanças climáticas são alterações globais no clima devido ao aumento dos gases de efeito estufa, com impactos abrangentes.</p>
           <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal5">Leia mais sobre...</a>
         </div>
       </div>
     </div>
+    <!-- Outros cards da parte inferior aqui... -->
   </div>
 </div>
 
@@ -237,6 +199,12 @@
     </div>
   </div>
 </div>
+
+<footer class="footer footer-dark">
+  <div class="container">
+    <p class="text-center">Copyright &copy; 2023 CF. All rights reserved.</p>
+  </div>
+</footer>
 
 <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
