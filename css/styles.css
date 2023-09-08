@@ -3,8 +3,22 @@ body {
     background-color: #fafafa;
 }
 
-.custom-navbar {
-    background-color: #69966b; /* Cor de fundo navbar */
+@media (max-width: 991px) {
+    .sidebar {
+        background-color: rgba(265, 265, 265, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    .sidebar .navbar-nav .nav-link:hover {
+        color: #88b385;
+        /* Altera a cor do link ao passar o mouse para verde */
+    }
+
+}
+
+.carousel-item {
+    height: 45rem;
+    background: #777;
 }
 
 .custom-section {
@@ -17,12 +31,14 @@ body {
 }
 
 .custom-card img {
-    height: 200px; /* Ajuste a altura desejada para as imagens */
+    height: 200px;
+    /* Ajuste a altura desejada para as imagens */
     object-fit: cover;
 }
 
 .modal-body {
-    margin-bottom: 20px; /* Adiciona uma distância entre os modais */
+    margin-bottom: 20px;
+    /* Adiciona uma distância entre os modais */
 }
 
 .custom-card {
@@ -37,24 +53,30 @@ body {
 .custom-card img {
     height: 200px;
     object-fit: cover;
-    border-radius: 8px; /* Rounded corners for images */
-  }
+    border-radius: 8px;
+    /* Rounded corners for images */
+}
 
 .custom-card .card-title {
-color: black; /* Cor do título */
+    color: black;
+    /* Cor do título */
 }
 
 .custom-card .card-text {
-color: black; /* Cor do texto (preto) */
+    color: black;
+    /* Cor do texto (preto) */
 }
 
 .custom-card .btn-primary {
-background-color: #69966b; /* Cor do botão */
-border: none; /* Remover a borda do botão */
+    background-color: #69966b;
+    /* Cor do botão */
+    border: none;
+    /* Remover a borda do botão */
 }
 
 .custom-card .btn-primary:hover {
-background-color: #618163; /* Cor do botão ao passar o mouse */
+    background-color: #618163;
+    /* Cor do botão ao passar o mouse */
 }
 
 .modal-body {
@@ -62,5 +84,6 @@ background-color: #618163; /* Cor do botão ao passar o mouse */
 }
 
 .mt-4 {
-    margin-top: 40px; /* Ajuste conforme necessário */
+    margin-top: 40px;
+    /* Ajuste conforme necessário */
 }

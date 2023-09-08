@@ -1,52 +1,53 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-image: url("../imagens/login.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /* Estilos para o formulário */
-  .container {
-    background: rgba( 242, 242, 242, 0.35 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 6.5px );
-    -webkit-backdrop-filter: blur( 6.5px );
-    border-radius: 15px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    text-align: center;
-    max-width: 600px;
-  }
-  
-  .login-title {
-    margin-bottom: 10px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  .form-control {
-    border-radius: 20px; /* Faz os campos de entrada ficarem redondos */
-  }
-  
-  .btn {
-    background-color: #007bff;
-    border-color: #007bff;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: white;
-  }
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../imagens/login.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .login-title {
-    margin-bottom: 10px;
-    color: #ffffff; 
-  }
+/* Estilos para o formulário */
+.container {
+  background: rgba(242, 242, 242, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  text-align: center;
+  max-width: 600px;
+}
 
-  .login-text {
-    color: #ffffff; 
-  }
+.login-title {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  border-radius: 20px;
+  /* Faz os campos de entrada ficarem redondos */
+}
+
+.btn {
+  background-color: #007bff;
+  border-color: #007bff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.login-title {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.login-text {
+  color: #ffffff;
+}
